@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You're invited to a Mebit circle</title>
+<meta name="description" content="You've been invited to share a Mebit circle — a shared memory for the people who matter most.">
+<link rel="icon" type="image/png" href="/assets/images/mebit-icon.png">
+<meta property="og:title" content="You're invited to a Mebit circle">
+<meta property="og:description" content="A shared memory for the people who matter most. Capture by voice, ask in plain language.">
+<meta property="og:image" content="https://flawedworks.com/assets/images/mebit-icon.png">
+<link rel="stylesheet" href="/mebit/mebit.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/mebit/">Me<span>bit</span></a>
+  <div class="nav-links">
+    <a href="/mebit/">About</a>
+    <a href="/mebit/privacy/">Privacy</a>
+    <a href="https://apps.apple.com/app/id6772777036" class="nav-cta">Download on iOS</a>
+  </div>
+</nav>
+
+<section class="hero" style="min-height:auto;padding:150px 24px 80px;">
+  <div class="invite-card">
+    <img class="invite-icon" src="/assets/images/mebit-icon.png" alt="Mebit">
+    <p class="invite-from"><strong id="inviter">Someone</strong> invited you to share a Mebit circle.</p>
+    <p class="hero-sub" style="margin:14px auto 0;max-width:380px;">A shared memory for the people who matter most — capture by voice, ask in plain language. Your bits flow to each other, attributed, so you always know who said what.</p>
+    <div class="invite-buttons">
+      <a id="openInvite" class="btn-primary" href="https://apps.apple.com/app/id6772777036">Open your invite</a>
+      <a class="btn-secondary" href="https://apps.apple.com/app/id6772777036">Get Mebit — free</a>
+    </div>
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <p><strong>New to Mebit?</strong> Tap <em>Get Mebit — free</em> to install it from the App Store, then come back to this page.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <p>Tap <strong>Open your invite</strong> to join the circle. That's it — the invite opens right in the app.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a class="nav-logo" href="https://flawedworks.com" style="font-family:'DM Serif Display',serif;">Flawed<span>Works</span></a>
+  <p>© 2026 FlawedWorks · <a href="/mebit/privacy/">Privacy</a> · <a href="https://flawedworks.com">flawedworks.com</a></p>
+</footer>
+
+<script>
+  (function () {
+    var params = new URLSearchParams(location.search);
+    var from = params.get('from');
+    if (from) {
+      // textContent (never innerHTML) — the name is untrusted input.
+      document.getElementById('inviter').textContent = from;
+      document.title = from + ' invited you to a Mebit circle';
+    }
+    var s = params.get('s');
+    var openBtn = document.getElementById('openInvite');
+    // Only honor a genuine iCloud CKShare URL — blocks javascript:/open-redirect abuse.
+    if (s && /^https:\/\/www\.icloud\.com\/share\//.test(s)) {
+      openBtn.setAttribute('href', s);
+    } else {
+      // No valid invite token present — there's nothing to open, so point everyone at install.
+      openBtn.textContent = 'Get Mebit — free';
+    }
+  })();
+</script>
+
+</body>
+</html>
