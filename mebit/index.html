@@ -3,14 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mebit — Let go. Mebit remembers.</title>
-<meta name="description" content="Mebit is your exocortex in your pocket. Capture anything by voice, ask anything in plain language, carry less. An iOS app by FlawedWorks.">
+<title>Mebit — Voice notes that sort themselves. Let go. Mebit remembers.</title>
+<meta name="description" content="Say everything on your mind in one breath — Mebit splits it into separate notes, offers the reminder or calendar event, and sorts it onto a workspace by what you meant. Voice-first memory for ADHD, couples and caregivers. An iOS app by FlawedWorks.">
 <link rel="icon" type="image/png" href="/assets/images/mebit-icon.png">
-<meta property="og:title" content="Mebit — Let go. Mebit remembers.">
-<meta property="og:description" content="Your exocortex, in your pocket. Capture by voice, ask in plain language, carry less.">
+<meta name="apple-itunes-app" content="app-id=6772777036">
+<meta property="og:title" content="Mebit — Voice notes that sort themselves.">
+<meta property="og:description" content="Say everything at once. Mebit splits it into separate notes, offers the reminder, and sorts it onto a workspace by what you meant.">
 <meta property="og:image" content="https://flawedworks.com/assets/images/mebit-icon.png">
 <meta property="og:type" content="website">
 <link rel="stylesheet" href="/mebit/mebit.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Mebit - Exocortex",
+  "operatingSystem": "iOS",
+  "applicationCategory": "ProductivityApplication",
+  "description": "Voice-first personal memory. Say everything on your mind at once and Mebit splits it into separate notes, offers a reminder or calendar event when a note asks for one, and sorts everything onto a workspace by what you meant to do with it.",
+  "url": "https://flawedworks.com/mebit/",
+  "downloadUrl": "https://apps.apple.com/app/id6772777036",
+  "author": { "@type": "Organization", "name": "FlawedWorks", "url": "https://flawedworks.com" },
+  "offers": [
+    { "@type": "Offer", "name": "Mebit Solo", "price": "4.99", "priceCurrency": "USD", "description": "One-time purchase, yours forever." },
+    { "@type": "Offer", "name": "Mebit Sharing (monthly)", "price": "2.99", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Mebit Sharing (yearly)", "price": "24.99", "priceCurrency": "USD" }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -19,6 +38,7 @@
   <div class="nav-logo">Me<span>bit</span></div>
   <div class="nav-links">
     <a href="#how">How it works</a>
+    <a href="#capture">Capture</a>
     <a href="#circles">Circles</a>
     <a href="#privacy">Privacy</a>
     <a href="https://apps.apple.com/app/id6772777036" class="nav-cta">Download on iOS</a>
@@ -62,6 +82,55 @@
       <div class="bubble bubble-user">Where did I put the extra keys?</div>
       <div class="bubble bubble-mebit">Kitchen drawer — you noted that <strong>11 days ago</strong>.</div>
     </div>
+  </div>
+</section>
+
+<!-- CAPTURE -->
+<section class="circles-section" id="capture">
+  <p class="section-eyebrow">Capture</p>
+  <h2 class="section-headline">Say it all at once.<br>Mebit sorts it out.</h2>
+  <p style="text-align:center; font-size:18px; color:var(--ink-mid); line-height:1.7; max-width:640px; margin:0 auto 48px;">You don't think in tidy single items, so you shouldn't have to speak that way. Say everything on your mind in one breath — Mebit splits it into separate notes.</p>
+
+  <div class="capture-demo">
+    <div class="capture-said">"We're out of dog food, I need to call the dentist Tuesday, and Kim's birthday is September 2nd"</div>
+    <div class="capture-arrow">becomes three notes</div>
+    <div class="capture-notes">
+      <span class="capture-note"><span class="rail mint"></span>Out of dog food</span>
+      <span class="capture-note"><span class="rail coral"></span>Call the dentist Tuesday</span>
+      <span class="capture-note"><span class="rail periwinkle"></span>Kim's birthday September 2</span>
+    </div>
+  </div>
+
+  <div class="circles-grid" style="margin-top:48px;">
+    <div class="circle-card green">
+      <div class="circle-dot"></div>
+      <h3>Fix it while it's fresh</h3>
+      <p>The transcript appears the moment you stop talking. Misheard a name? Tap it and type, or just say it again — right there, while you still remember what you meant.</p>
+    </div>
+    <div class="circle-card yellow">
+      <div class="circle-dot"></div>
+      <h3>It offers. You decide.</h3>
+      <p>Say "Tuesday at three" and the reminder is set. Something next spring goes to your calendar with a tap. Mention a store and Mebit can nudge you when you're actually there. Ignore any of it and nothing breaks.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WORKSPACE -->
+<section class="workspace-section">
+  <div class="workspace-inner">
+    <p class="section-eyebrow">Your workspace</p>
+    <h2 class="section-headline">Not a wall of notes.<br>Five shelves.</h2>
+    <p class="workspace-lead">A list of everything you've ever said is just a pile, and a pile is paralysing. Mebit sorts each note by what you meant to do with it, then shows you five lines — so you can open the one you're ready for and leave the rest alone.</p>
+
+    <div class="shelf-strip">
+      <div class="shelf-row"><span class="rail coral"></span><span class="shelf-name">Do soon</span><span class="shelf-count coral-text">3</span></div>
+      <div class="shelf-row"><span class="rail mint"></span><span class="shelf-name">To get</span><span class="shelf-count mint-text">8</span></div>
+      <div class="shelf-row"><span class="rail periwinkle"></span><span class="shelf-name">Dates &amp; plans</span><span class="shelf-count periwinkle-text">2</span></div>
+      <div class="shelf-row"><span class="rail orchid"></span><span class="shelf-name">Ideas</span><span class="shelf-count orchid-text">5</span></div>
+      <div class="shelf-row"><span class="rail slate"></span><span class="shelf-name">Remember</span><span class="shelf-count slate-text">11</span></div>
+    </div>
+
+    <p class="workspace-note">Nothing to file. Nothing to tag. Mebit works out where each note belongs from what you said.</p>
   </div>
 </section>
 

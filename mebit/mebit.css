@@ -447,3 +447,41 @@
 .doc li{margin-bottom:6px;}
 .doc a{color:var(--green);}
 @media (max-width:768px){.doc{padding:100px 24px 60px;}}
+
+/* ── Capture + Workspace (1.1.0) ── */
+/* Shelf hues mirror the app's own shelf colours so the site and the product agree. */
+.rail{display:inline-block;width:4px;border-radius:2px;flex-shrink:0;}
+.rail.coral{background:#F5785F;}
+.rail.mint{background:#4FBF87;}
+.rail.periwinkle{background:#7C81E8;}
+.rail.orchid{background:#E08AD1;}
+.rail.slate{background:#9BA3B2;}
+
+.capture-demo{max-width:640px;margin:0 auto;text-align:center;}
+.capture-said{background:white;border:1.5px solid var(--green-mid);border-radius:var(--radius);padding:24px 28px;font-size:17px;line-height:1.6;color:var(--ink);box-shadow:0 2px 12px rgba(0,0,0,0.06);}
+.capture-arrow{font-size:13px;color:var(--ink-light);letter-spacing:0.04em;margin:18px 0;}
+.capture-notes{display:flex;flex-direction:column;gap:10px;}
+.capture-note{display:flex;align-items:center;gap:12px;background:var(--green-light);border:1px solid var(--green-mid);border-radius:12px;padding:14px 18px;font-size:15px;color:var(--ink);text-align:left;}
+.capture-note .rail{align-self:stretch;min-height:20px;}
+
+.workspace-section{padding:100px 48px;background:var(--ink);color:white;}
+.workspace-inner{max-width:760px;margin:0 auto;}
+.workspace-section .section-eyebrow{color:rgba(255,255,255,0.4);}
+.workspace-section .section-headline{color:white;}
+.workspace-lead{text-align:center;font-size:18px;line-height:1.7;color:rgba(255,255,255,0.6);max-width:640px;margin:0 auto 48px;}
+.shelf-strip{display:flex;flex-direction:column;gap:2px;background:rgba(255,255,255,0.08);border-radius:var(--radius);overflow:hidden;}
+.shelf-row{display:flex;align-items:center;gap:16px;background:#1c1c1c;padding:20px 24px;}
+.shelf-row .rail{align-self:stretch;min-height:26px;}
+.shelf-name{flex:1;font-size:16px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:rgba(255,255,255,0.95);}
+.shelf-count{font-size:16px;font-weight:600;font-variant-numeric:tabular-nums;}
+.coral-text{color:#F5785F;}
+.mint-text{color:#4FBF87;}
+.periwinkle-text{color:#7C81E8;}
+.orchid-text{color:#E08AD1;}
+.slate-text{color:#9BA3B2;}
+.workspace-note{text-align:center;font-size:15px;color:rgba(255,255,255,0.45);margin-top:32px;}
+
+@media (max-width:768px){
+  .workspace-section{padding:72px 24px;}
+  .capture-said{font-size:16px;padding:20px 22px;}
+}
