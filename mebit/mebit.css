@@ -481,7 +481,38 @@
 .slate-text{color:#9BA3B2;}
 .workspace-note{text-align:center;font-size:15px;color:rgba(255,255,255,0.45);margin-top:32px;}
 
+/* SCREENS — real device captures, horizontally scrollable */
+/* a touch lighter than --ink so the near-black screenshots read as objects
+   sitting on the page rather than bleeding into it */
+.screens-section{padding:100px 48px;background:#242424;color:white;}
+.screens-inner{max-width:1040px;margin:0 auto;}
+.screens-section .section-eyebrow{color:rgba(255,255,255,0.4);}
+.screens-section .section-headline{color:white;margin-bottom:16px;}
+.screens-lead{text-align:center;font-size:18px;line-height:1.7;color:rgba(255,255,255,0.6);max-width:600px;margin:0 auto 48px;}
+.shot-gallery{
+  display:flex;gap:22px;overflow-x:auto;
+  padding:6px 4px 22px;
+  scroll-snap-type:x proximity;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-color:rgba(255,255,255,0.22) transparent;
+}
+.shot{flex:0 0 auto;width:262px;margin:0;scroll-snap-align:center;}
+.shot img{
+  display:block;width:100%;height:auto;
+  border-radius:22px;
+  border:1px solid rgba(255,255,255,0.16);
+  background:#000;
+  box-shadow:0 12px 32px rgba(0,0,0,0.45);
+}
+.shot figcaption{margin-top:14px;font-size:14px;line-height:1.5;color:rgba(255,255,255,0.55);}
+
 @media (max-width:768px){
   .workspace-section{padding:72px 24px;}
   .capture-said{font-size:16px;padding:20px 22px;}
+  /* bleed the strip off the right edge so it reads as scrollable */
+  .screens-section{padding:72px 0 72px 24px;}
+  .screens-inner .section-eyebrow,
+  .screens-inner .section-headline,
+  .screens-lead{padding-right:24px;}
+  .shot{width:224px;}
 }
