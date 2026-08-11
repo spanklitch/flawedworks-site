@@ -1,0 +1,11 @@
+# Pretty URL canonicals — GSC "Page with redirect" / "Duplicate without user-selected canonical"
+# Prefer https://flawedworks.com/path/ (trailing slash). Collapse bare index.html URLs.
+
+/index.html                          /                    301!
+/zagnals/index.html                  /zagnals/            301!
+/zagnals/privacy/index.html          /zagnals/privacy/    301!
+/mebit/index.html                    /mebit/              301!
+/mebit/privacy/index.html            /mebit/privacy/      301!
+/mebit/support/index.html            /mebit/support/      301!
+/mebit/join/index.html               /mebit/join/         301!
+/privacy/index.html                  /privacy/            301!

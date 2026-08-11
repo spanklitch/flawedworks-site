@@ -1,0 +1,11 @@
+# Origin robots.txt for flawedworks.com (Netlify).
+# Cloudflare may append managed AI-bot rules on top — that is fine.
+# Search engines need the Sitemap line to discover product pages reliably.
+
+User-agent: *
+Allow: /
+
+# Invite deep-links are personal/thin — not for the index
+Disallow: /mebit/join/
+
+Sitemap: https://flawedworks.com/sitemap.xml
