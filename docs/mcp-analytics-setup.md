@@ -1,0 +1,1 @@
+/home/seiler/claude-projects/verqury-site/docs/mcp-analytics-setup.md

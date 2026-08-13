@@ -22,7 +22,7 @@
 
 <main class="doc">
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: August 2026</p>
+  <p class="updated">Last updated: 13 August 2026</p>
 
   <p>Mebit is an iOS app made by FlawedWorks, an independent software studio. This policy explains exactly what happens to your data <strong>in the app</strong>. The short version: your notes live on your device, and nothing leaves it unless you choose to share or use an AI provider you configure yourself. We have no app servers, no accounts, no ads, and no analytics <strong>in the app</strong>.</p>
 
@@ -47,10 +47,16 @@
   <p>If you invite someone to a circle, the bits in that circle sync to that person through Apple's CloudKit, using your iCloud account. This data travels through Apple's infrastructure under Apple's privacy terms — FlawedWorks has no server in the path and cannot read it. Sharing only happens for circles you explicitly share; your private circle is never shared.</p>
 
   <h2>Location</h2>
-  <p>If you grant location access, Mebit takes a single foreground reading at the moment you ask a question, to give location-aware answers. Mebit does not track your movement, run background location, or build a location history. An optional place label you attach to a note is stored with that note, on your device.</p>
+  <p><strong>By default, Mebit only reads your location while you are using it.</strong> It takes a single reading at the moment you ask a question, so answers can be location-aware, and it can optionally stamp where a note was captured. In this default mode there is no background location use at all, and no location history is built.</p>
+  <p><strong>Place nudges are optional, and off until you turn them on.</strong> If you enable them, Mebit asks iOS for &ldquo;Always&rdquo; location access and then does use location in the background &mdash; watching for you arriving at a place you have named or mentioned in a note, so it can quietly surface that note. It does this with significant-location changes and geofences around a small number of places at a time.</p>
+  <p>Even then, all of it happens <strong>on your device</strong>. Your location is evaluated locally, is never sent to us or anyone else, and no trail of where you have been is stored or transmitted. FlawedWorks has no server in the path and receives no location data whatsoever. You can turn Place nudges off at any time in Settings &rarr; Location, which stops the background use immediately.</p>
+  <p>An optional place label you attach to a note is stored with that note, on your device.</p>
 
   <h2>Notifications</h2>
   <p>Mebit may schedule local reminders (for example, to check whether an old note is still relevant). These are generated and delivered on your device. No notification data is sent anywhere.</p>
+
+  <h2>Crash diagnostics</h2>
+  <p>Mebit uses Apple&rsquo;s MetricKit to receive reports about <em>its own</em> crashes and freezes, so problems can be found and fixed. These reports stay on your device and are visible to you at Settings &rarr; Help &rarr; Diagnostics. They contain technical information only &mdash; which part of the app stopped and why &mdash; never the content of your notes. Nothing is transmitted to us automatically; we only ever see a report if you choose to send us one yourself.</p>
 
   <h2>Children</h2>
   <p>Mebit is not directed at children under 13 and collects no personal information from anyone via the app.</p>
