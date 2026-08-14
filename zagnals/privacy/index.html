@@ -21,19 +21,19 @@
   <main>
     <p class="amber-label">ZAGNALS™ · A Flawedworks App</p>
     <h1>Privacy Policy</h1>
-    <p style="color: var(--text-muted); font-size: 0.85rem;">Effective: March 2026</p>
+    <p style="color: var(--text-muted); font-size: 0.85rem;">Effective: March 2026 &middot; Last updated: 13 August 2026</p>
 
     <div style="height: 1.5rem;"></div>
 
     <div class="callout">
-      <p><strong>ZAGNALS collects no data of any kind.</strong> The app has no network access, no analytics, no advertising, and no third-party SDKs. Nothing you do in ZAGNALS is ever transmitted, stored remotely, or shared with anyone — including the developer.</p>
+      <p><strong>ZAGNALS collects no data of any kind.</strong> The app has no network access, no analytics, no advertising, and no third-party SDKs. ZAGNALS never transmits anything, stores nothing remotely, and shares nothing with the developer or any third party. The one exception worth naming is not the app sending data anywhere, but Apple&rsquo;s own Siri: if you choose to control ZAGNALS by voice, that request is handled by Siri under Apple&rsquo;s privacy policy. See <a href="#siri">Siri and Shortcuts</a>.</p>
     </div>
 
     <h2>What data ZAGNALS collects</h2>
     <p>None. ZAGNALS does not collect, transmit, store remotely, or share any personal information or usage data.</p>
 
     <h2>How ZAGNALS stores your settings</h2>
-    <p>ZAGNALS saves your preferences (display duration, text color, timer settings, etc.) locally on your device using Apple's standard UserDefaults system. This data:</p>
+    <p>ZAGNALS saves your preferences (display duration, text color, timer settings, etc.) locally on your device using Apple's standard UserDefaults system, in a container shared with the ZAGNALS widget so the widget can show your current countdown. This data:</p>
     <ul>
       <li>Exists only on your device</li>
       <li>Is never transmitted over a network</li>
@@ -43,6 +43,13 @@
 
     <h2>Network access</h2>
     <p>ZAGNALS has no network access of any kind. It does not connect to the internet, does not make API calls, and does not communicate with any server — at any time, for any reason.</p>
+
+    <h2 id="siri">Siri and Shortcuts</h2>
+    <p>ZAGNALS can be controlled by voice &mdash; &ldquo;Start ZAGNALS countdown&rdquo; and similar &mdash; and appears in Apple&rsquo;s Shortcuts app so you can build your own automations. This is built on Apple&rsquo;s App Intents, and it is optional: ZAGNALS works exactly the same if you never use it.</p>
+    <p>When you speak to Siri, <strong>Siri</strong> handles that request, not ZAGNALS. What you say goes to Apple and is governed by <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple&rsquo;s privacy policy</a>, the same as any other Siri request on your iPhone. ZAGNALS receives only the resulting command &mdash; start, pause, resume, restart &mdash; and never the audio. Nothing about it reaches FlawedWorks, and the app still makes no network connection of its own.</p>
+
+    <h2>Notifications</h2>
+    <p>ZAGNALS schedules local notifications so a countdown can still reach you when the app is not on screen, and marks them time-sensitive so they are not held back by Focus. These are created and delivered entirely by your device. No notification content is sent to us or to anyone else, and no push server is involved &mdash; ZAGNALS has no remote push capability at all.</p>
 
     <h2>Third-party SDKs and analytics</h2>
     <p>ZAGNALS contains zero third-party SDKs, frameworks, or libraries. There are no analytics tools, no crash reporters, no advertising networks, and no tracking of any kind.</p>
