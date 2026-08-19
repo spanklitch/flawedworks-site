@@ -5,7 +5,9 @@
         "appIDs": ["45XRXMK36G.com.garyseiler.mebit"],
         "components": [
           { "/": "/mebit/join" },
-          { "/": "/mebit/join/*" }
+          { "/": "/mebit/join/*" },
+          { "/": "/mebit/capture" },
+          { "/": "/mebit/capture/*" }
         ]
       }
     ]
