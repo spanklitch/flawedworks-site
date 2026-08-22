@@ -22,15 +22,15 @@
 
 <main class="doc">
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 13 August 2026</p>
+  <p class="updated">Last updated: 21 August 2026</p>
 
-  <p>Mebit is an iOS app made by FlawedWorks, an independent software studio. This policy explains exactly what happens to your data <strong>in the app</strong>. The short version: your notes live on your device, and nothing leaves it unless you choose to share or use an AI provider you configure yourself. We have no app servers, no accounts, no ads, and no analytics <strong>in the app</strong>.</p>
+  <p>Mebit is an iOS app made by FlawedWorks, an independent software studio. This policy explains exactly what happens to your data <strong>in the app</strong>. The short version: your notes live on your device, and nothing leaves it unless you choose to &mdash; by sharing a circle, turning on iCloud backup, or using an AI provider you configure yourself. We have no app servers, no accounts, no ads, and no analytics <strong>in the app</strong>.</p>
 
   <h2>What we collect (the app)</h2>
   <p><strong>Nothing from the app.</strong> FlawedWorks operates no app backend and has no account system for Mebit. We never receive, store, or see your notes, your voice, your location, or your in-app usage. There is no analytics SDK, no advertising SDK, and no tracking of any kind <strong>in the app</strong>.</p>
 
   <h2>Your notes ("bits")</h2>
-  <p>The notes you capture are stored locally on your device in an on-device database. They remain there unless you explicitly share a circle (see Sharing below). Deleting a bit removes it from your active view; deletions propagate to anyone you've shared a circle with.</p>
+  <p>The notes you capture are stored locally on your device in an on-device database. They remain there unless you explicitly share a circle (see Sharing below) or turn on iCloud backup (see below). Deleting a bit removes it from your active view; deletions propagate to anyone you've shared a circle with.</p>
 
   <h2>Voice capture</h2>
   <p>Speech-to-text runs entirely on your device using on-device models. Your audio is never uploaded to any server — not ours, not Apple's, not anyone's. The microphone is used only while you are actively capturing a note.</p>
@@ -45,6 +45,11 @@
 
   <h2>Sharing (circles)</h2>
   <p>If you invite someone to a circle, the bits in that circle sync to that person through Apple's CloudKit, using your iCloud account. This data travels through Apple's infrastructure under Apple's privacy terms — FlawedWorks has no server in the path and cannot read it. Sharing only happens for circles you explicitly share; your private circle is never shared.</p>
+
+  <h2>iCloud backup (optional, off by default)</h2>
+  <p>Mebit can back your notes up to <strong>your own private iCloud database</strong> so that reinstalling the app, or moving to a new phone, does not lose them. This is <strong>off unless you turn it on</strong>, in Settings &rarr; Back up to iCloud.</p>
+  <p>When it is on, your notes are copied to the private CloudKit database belonging to <em>your</em> Apple Account. It is your iCloud storage, under Apple's privacy terms. <strong>FlawedWorks has no server in the path and cannot read your backup</strong> &mdash; we could not retrieve your notes even if we were asked to. Turning the setting off deletes those copies again, apart from notes in a circle you are actively sharing, which have to remain for the people you shared them with.</p>
+  <p>Your notes are also included in your normal iPhone backup, as any app's data is, whether or not this setting is on.</p>
 
   <h2>Location</h2>
   <p><strong>By default, Mebit only reads your location while you are using it.</strong> It takes a single reading at the moment you ask a question, so answers can be location-aware, and it can optionally stamp where a note was captured. In this default mode there is no background location use at all, and no location history is built.</p>
