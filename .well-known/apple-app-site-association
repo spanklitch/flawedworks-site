@@ -7,7 +7,9 @@
           { "/": "/mebit/join" },
           { "/": "/mebit/join/*" },
           { "/": "/mebit/capture" },
-          { "/": "/mebit/capture/*" }
+          { "/": "/mebit/capture/*" },
+          { "/": "/mebit/errand" },
+          { "/": "/mebit/errand/*" }
         ]
       }
     ]
